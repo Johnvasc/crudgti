@@ -1,0 +1,6 @@
+const express = require('express')
+const router = require('./router')
+const app = new express()
+app.use('/', router)
+app.listen(8080)
+console.log('server is on!')
